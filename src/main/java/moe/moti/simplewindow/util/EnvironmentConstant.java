@@ -1,9 +1,11 @@
 package moe.moti.simplewindow.util;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
+@Component
 public class EnvironmentConstant {
     @Value("${environment.database.url}")
     public String SQL_DATA_URL_ENVIRONMENT;
